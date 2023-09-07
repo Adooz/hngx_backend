@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import datetime
 import pytz
+from collections import OrderedDict
 
 app = Flask(__name__)
 
@@ -39,15 +40,16 @@ def get_info():
     github_repo_url = "https://github.com/Adooz/hngx_backend.git"
     github_file_url = f"{github_repo_url}/blob/main/app.ext"
     # Prepare the response JSON
-    response_data = {
-        "slack_name": slack_name,
-        "current_day": current_day,
-        "utc_time": utc_time_str,
-        "track": track,
-        "github_file_url": github_file_url,
-        "github_repo_url": github_repo_url,
-        "status_code": 200
-    }
+    response_data = OrderedDict([
+        ("slack_name", slack_name),
+        ("current_day", current_day),
+        ("utc_time", utc_time_str),
+        ("track", track),
+        ("github_file_url", github_file_url),
+        ("github_repo_url", github_repo_url),
+        ("status_code", 200)
+    ])
+
 
     return jsonify(response_data)
 
