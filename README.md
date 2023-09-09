@@ -27,7 +27,7 @@ Before using this Flask API, make sure you have the following prerequisites inst
 
 You can install Flask and pytz using pip:
 
-```bash
+```bash```
 pip install Flask pytz
 
 
@@ -39,14 +39,14 @@ To set up and run this Flask API on your local machine, follow these steps:
 
    First, clone this GitHub repository to your local machine using the following command:
 
-   ```bash
+   ```bash```
    git clone https://github.com/Adooz/hngx_backend.git
 
 Navigate to the Project Directory:
 
 Change your current directory to the project folder by running:
 
-```bash
+```bash```
 cd hngx_backend
 
 
@@ -54,7 +54,7 @@ Run the Flask Application:
 
 Start the Flask application by running the following command:
 
-```bash
+```bash```
 python3 app.py
 
 
@@ -62,7 +62,7 @@ Access the API:
 
 Once the Flask application is running, you can access the API using your web browser or a tool like curl. For example, to make a GET request to the /api endpoint, use a URL like:
 
-```bash
+```bash```
 http://localhost:5000/api?slack_name=your_name&track=backend
 
 That's it! You've successfully installed and set up the Flask API on your local machine. You can now use it to retrieve information based on the provided query parameters.
@@ -98,7 +98,7 @@ The API returns a JSON response with the following information:
 
 To use the API, you can make a GET request to the `/api` endpoint with the required query parameters. Here's an example using `curl`:
 
-```bash
+```bash```
 curl -X GET "http://localhost:5000/api?slack_name=Kingsley%20Ndonake&track=backend"
 
 ## Contributing
@@ -113,14 +113,13 @@ We welcome contributions to improve and enhance this Flask API. Whether you want
 
    Clone your forked repository to your local machine:
 
-   ```bash
    git clone https://github.com/Adooz/hngngx_backend.git
 
 Create a Branch:
 
 Create a new branch for your contributions:
 
-```bash
+
 git checkout -b feature-name
 
 
@@ -136,13 +135,13 @@ Commit Your Changes:
 
 Commit your changes to your branch with a meaningful commit message:
 
-```bash
+```bash```
 git commit -m "Add feature: your feature description"
+
 Push to Your Fork:
 
 Push your changes to your GitHub fork:
 
-```bash
 git push origin feature-name
 Create a Pull Request:
 
@@ -170,4 +169,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### MIT License
 
 MIT License
-
