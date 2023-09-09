@@ -27,11 +27,11 @@ def get_info():
 
     # Manually build the JSON response with the desired order of keys
     response_json = (
-        '{{"slack_name":"{slack_name}","current_day":"{current_day}",'
-        '"utc_time":"{utc_time_str}","track":"{track}",'
-        '"github_file_url":"{github_file_url}",'
-        '"github_repo_url":"{github_repo_url}",'
-        '"status_code":{status_code}}}'
+        '{{"slack_name": "{slack_name}","current_day": "{current_day}",'
+        '"utc_time": "{utc_time_str}","track": "{track}",'
+        '"github_file_url": "{github_file_url}",'
+        '"github_repo_url": "{github_repo_url}",'
+        '"status_code": {status_code}}}'
     ).format(
         slack_name=slack_name,
         current_day=current_day,
