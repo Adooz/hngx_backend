@@ -38,7 +38,7 @@ def get_info():
 
     # Define GitHub repository and file URLs
     github_repo_url = "https://github.com/Adooz/hngx_backend.git"
-    github_file_url = f"{github_repo_url}/blob/main/app.ext"
+    github_file_url = f"{github_repo_url}/blob/main/app.py"
     # Prepare the response JSON
     response_data = OrderedDict([
         ("slack_name", slack_name),
